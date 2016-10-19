@@ -1,10 +1,24 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.1.1.js"></script>
+    <script src="js/scripts.js"></script>
     <title>Cooking Conversions</title>
   </head>
+
   <body>
-    <h1>Cooking Conversions</h1>
-    <script src="js/scripts.js"></script>
+    <div class="container">
+      <form id="gallonsLiters">
+        <h2>Convert gallons to liters</h2>
+        <div class="form-group">
+          <label for="gallonsLitersInput">Enter number of gallons to be converted:</label>
+          <input id="gallonsLitersInput" class="form-control" type="text">
+        </div>
+        <button type="submit" class="btn">Make the conversion!</button>
+      </form>
+      <div class="output-gallonsLiters"></div>
+    </div>
   </body>
 </html>

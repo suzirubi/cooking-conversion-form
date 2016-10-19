@@ -1,9 +1,20 @@
-var gallons = parseFloat(prompt("Enter number of gallons you would like to convert: "));
+// begin back end
 
-alert(gallons + " gallons converted to liters equals " + gallons*3.7851 + " liters.");
-alert(gallons + " gallons converted to ounces equals " + gallons*128 + " ounces.")
+var gallonsLiters = function(number1) {
+  return number1 * 3.7851;
+};
 
-var cups = parseFloat(prompt("Enter number of cups you would like to convert: "));
+var gallonsOunces = function(number1) {
+  return number1 * 128;
+};
 
-alert(cups + " cups converted to tablespoons equals " + cups*19.2152 + " tablespoons.");
-alert(cups + " cups converted to ounces equals " + gallons*0.520421 + " ounces.");
+// begin front end
+
+$(document).ready(function() {
+  $("form#gallonsLiters").submit(function(event) {
+    event.preventDefault();
+    var number1 = parseInt($("#gallonsLitersInput").val());
+    var result = gallonsLiters(number1);
+    $(".output-gallonsLiters").text(result);
+  });
+});
