@@ -6,7 +6,7 @@
 
 ## Description
 
-This is a single web page with implements simple Javascript code.
+This is a single web page with implements simple Javascript code and utilizes the form element to collect user data
 
 ## Setup/Installation Requirements
 
@@ -25,3 +25,5 @@ Please contact Suzi Rubino at suzi@suzirubi.com if you have questions or comment
 
 * html
 * Javascript
+* css
+
